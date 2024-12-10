@@ -1,33 +1,37 @@
-body{
-   background-color: rgb(120, 162, 184);
+body {
+    background-color: rgb(120, 162, 184);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-
 }
 
-#registroForm{
+#registroForm {
     background-color: rgb(175, 235, 243);
     padding: 50px;
     border-radius: 15px;
     margin: 15px;
     box-shadow: 1px 1px 10px black;
+    width: 450px; /* Aumenta el ancho del formulario */
 }
-label{
+
+label {
     display: block;
     margin-bottom: 5px;
 }
-label.inline{
+
+label.inline {
     display: inline-block;
 }
-input, select{
-    padding: 8px;
-    margin-bottom: 10px;
+
+input, select {
+    padding: 12px; /* Aumenta el padding para que se vea más espacioso */
+    margin-bottom: 15px; /* Ajusta los márgenes */
     box-sizing: border-box;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -35,11 +39,12 @@ input[type="checkbox"]{
 input[type="text"],
 input[type="email"],
 input[type="number"],
-select{
-    width: 100%;
+select {
+    width: 100%; /* Mantiene los inputs al 100% del ancho del contenedor */
+    font-size: 16px; /* Aumenta el tamaño del texto para mejor legibilidad */
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: rgb(95, 119, 95);
     color: white;
     padding: 15px;
@@ -48,12 +53,15 @@ input[type="submit"]{
     cursor: pointer;
     width: 100%;
     margin-top: 15px;
-    transition: .5s ease
+    transition: .5s ease;
+    font-size: 16px; /* Aumenta el tamaño del texto del botón */
 }
-input[type="submit"]:hover{
+
+input[type="submit"]:hover {
     background-color: rgb(74, 82, 74);
 }
-.error{
+
+.error {
     color: red;
-    font-size: 10px;
+    font-size: 12px; /* Aumenta un poco el tamaño del texto de error */
 }
